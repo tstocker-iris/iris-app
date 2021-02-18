@@ -11,6 +11,8 @@ Procédure d'installation
 * Installer XCode pour le dev iOS (MacOS uniquement) et/ou AndroidStudio pour le dev Android (Windows, MacOS, Linux) :
   * AndroidStudio : `https://developer.android.com/studio`
   * XCode : Via l'AppStore
+* Pour la compilation sur Android installer JavaJDK : 
+  * ```https://www.oracle.com/java/technologies/javase-jdk15-downloads.html```
 * Installer l'app Expo sur votre téléphone :
   * iOS : `https://apps.apple.com/fr/app/expo-client/id982107779`
   * Android : `https://play.google.com/store/apps/details?id=host.exp.exponent&hl=fr&gl=US`
