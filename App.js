@@ -6,6 +6,7 @@ import CustomHeader from "./CustomHeader";
 import BodyAvecTextQuiChangeAutomatiquement from "./BodyAvecTextQuiChangeAutomatiquement";
 import ListeDeCourse from "./ListeDeCourse";
 import StateManagement from "./StateManagement";
+import TodoList from "./TodoList";
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
       {/*<Body />*/}
       {/*<BodyAvecTextQuiChangeAutomatiquement />*/}
       {/*<ListeDeCourse />*/}
-      <StateManagement />
+      {/*<StateManagement />*/}
+      <TodoList />
       <StatusBar style="auto" />
     </View>
   );
