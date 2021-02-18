@@ -5,6 +5,7 @@ import Body from './Body';
 import CustomHeader from "./CustomHeader";
 import BodyAvecTextQuiChangeAutomatiquement from "./BodyAvecTextQuiChangeAutomatiquement";
 import ListeDeCourse from "./ListeDeCourse";
+import StateManagement from "./StateManagement";
 
 export default function App() {
   return (
@@ -12,7 +13,8 @@ export default function App() {
       <CustomHeader title={"Mon app IRIS"} />
       {/*<Body />*/}
       {/*<BodyAvecTextQuiChangeAutomatiquement />*/}
-      <ListeDeCourse />
+      {/*<ListeDeCourse />*/}
+      <StateManagement />
       <StatusBar style="auto" />
     </View>
   );
