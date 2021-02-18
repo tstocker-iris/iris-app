@@ -22,4 +22,5 @@ Procédure d'installation
 
 ## Travailler sur une app existante
 * ```cd <NomDuProjet>```
+* ```npm install```
 * ```npm start```
