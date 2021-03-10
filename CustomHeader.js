@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import {Text} from "react-native-web";
-import {StyleSheet} from "react-native";
+import {StyleSheet, Text} from "react-native";
 
 class CustomHeader extends Component {
+    tata() {
+
+    }
+
     render() {
         return (
             <Text style={styles.header}>
@@ -14,7 +17,7 @@ class CustomHeader extends Component {
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: 'red',
+        backgroundColor: 'blue',
         marginBottom: '50px',
         padding: '10px'
     },

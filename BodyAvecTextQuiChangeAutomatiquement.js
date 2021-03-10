@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     inputText: {
         padding: '10px',
         margin: '15px',
-        border: '1px solid black'
+        border: "1px solid black"
     },
 });
 

@@ -1,25 +1,38 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Body from './Body';
 import CustomHeader from "./CustomHeader";
-import BodyAvecTextQuiChangeAutomatiquement from "./BodyAvecTextQuiChangeAutomatiquement";
-import ListeDeCourse from "./ListeDeCourse";
+import {Component} from "react/cjs/react.production.min";
+import Body from "./Body";
 import StateManagement from "./StateManagement";
-import TodoList from "./TodoList";
+import ListeDeCourse from "./ListeDeCourse";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <CustomHeader title={"Mon app IRIS"} />
-      {/*<Body />*/}
-      {/*<BodyAvecTextQuiChangeAutomatiquement />*/}
-      {/*<ListeDeCourse />*/}
-      {/*<StateManagement />*/}
-      <TodoList />
-      <StatusBar style="auto" />
-    </View>
-  );
+// export default function App() {
+class App extends Component {
+    constructor(){
+        super();
+
+        this.header = Component.createRef();
+    }
+
+    toto() {
+        this.header.tata();
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+
+                <CustomHeader ref={this.header} title={"Mon app IRIS"}/>
+                {/*<Body />*/}
+                {/*<BodyAvecTextQuiChangeAutomatiquement />*/}
+                <ListeDeCourse />
+                {/*<StateManagement />*/}
+                {/*<TodoList/>*/}
+                <StatusBar style="auto"/>
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
@@ -30,3 +43,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
